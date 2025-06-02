@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Formulario de Registro de Estudiante</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #5c4403 0%, #ACB6E5 100%);
+    margin: 0;
+    padding: 40px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+
+  form {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  }
+
+  .section {
+    margin-bottom: 20px;
+  }
+
+  .section h2 {
+    margin-bottom: 10px;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #555;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+  }
+
+  input[type="text"]:focus,
+  input[type="date"]:focus,
+  input[type="number"]:focus,
+  input[type="tel"]:focus,
+  input[type="file"]:focus {
+    border-color: #6c63ff;
+    outline: none;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  button {
+    background-color: #5c4403;
+    color: #fff;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  button:hover {
+    background-color: #5c4403;
+    transform: scale(1.05);
+  }
+
+  @media(max-width: 600px){
+    .buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+</style>
+</head>
+<body>
+<h1>Colegio Nuestra Señora del Carmen Pasto</h1>
+    <h1>Programa PIAR</h1>
+<h1>Formulario de Registro de Estudiante</h1>
+
+
+<form action="#" method="POST" enctype="multipart/form-data">
+  <!-- Datos del Estudiante -->
+  <div class="section">
+    <h2>Información del Estudiante</h2>
+    <label for="nombre">Nombre completo</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Ingresa el nombre completo" required />
+
+    <label for="fechaNacimiento">Fecha de nacimiento</label>
+    <input type="date" id="fechaNacimiento" name="fechaNacimiento" required />
+
+    <label for="lugarNacimiento">Lugar de nacimiento</label>
+    <input type="text" id="lugarNacimiento" name="lugarNacimiento" placeholder="Ciudad, país" required />
+
+    <label for="edad">Edad</label>
+    <input type="number" id="edad" name="edad" min="0" max="120" placeholder="Edad en años" required />
+
+    <label for="Grado">Grado</label>
+    <input type="text" id="Grado" name="Grado" required />
+
+
+  <!-- Identificación y Dirección -->
+  <div class="section">
+    <h2>Información adicional</h2>
+    <label for="idNumero">No. de identificación</label>
+    <input type="text" id="idNumero" name="idNumero" placeholder="Número de identificación" required />
+
+    <label for="direccion">Dirección</label>
+    <input type="text" id="direccion" name="direccion" placeholder="Dirección completa" required />
+  </div>
+
+  <!-- Padres -->
+  <div class="section">
+    <h2>Información de los Padres</h2>
+    <label for="nombrePadre">Nombre del padre</label>
+    <input type="text" id="nombrePadre" name="nombrePadre" placeholder="Nombre del padre" required />
+
+    <label for="telefonoPadre">Teléfono del padre</label>
+    <input type="tel" id="telefonoPadre" name="telefonoPadre" placeholder="Número de teléfono" required />
+
+    <label for="nombreMadre">Nombre de la madre</label>
+    <input type="text" id="nombreMadre" name="nombreMadre" placeholder="Nombre de la madre" required />
+
+    <label for="telefonoMadre">Teléfono de la madre</label>
+    <input type="tel" id="telefonoMadre" name="telefonoMadre" placeholder="Número de teléfono" required />
+  </div>
+
+  <!-- Fotografía -->
+  <div class="section">
+    <h2>Fotografía del Estudiante</h2>
+    <label for="fotografia">Subir fotografía</label>
+    <input type="file" id="fotografia" name="fotografia" accept="image/*" />
+  </div>
+
+  <!-- Botones -->
+  <div class="buttons">
+    <button type="submit">Enviar</button>
+    <!--<button  href="diagnostico.html" class="button Diagnostica"> Diagnostico </button>-->
+  </div>
+</form>
+<br>
+<a href="diagnostico.html" class="button psicologo">Diagnostico                   </a>
+<a href="index.html" class="button psicologo">INICIO</a>
+</body>
+</html>

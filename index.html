@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inicio - Colegio Nuestra Señora del Carmen Pasto</title>
+  <style>
+    /* Estilos generales */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #5a4302 0%, #f3f4f5 100%);
+      color: #333;
+    }
+
+    /* Encabezado */
+    header {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #2c3e50;
+    }
+
+    header h2 {
+      margin: 10px 0 0 0;
+      font-size: 1.5em;
+      color: #34495e;
+    }
+
+    /* Imagen principal */
+    .main-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      display: block;
+      margin: 20px auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    /* Menú de ingreso */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+
+    a.button {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      text-decoration: none;
+      color: #fff;
+      border-radius: 10px;
+      transition: background 0.3s, transform 0.2s;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* Colores para los botones */
+    a.psicologo {
+      background-color: #331e02; /* rojo */
+    }
+    a.psicologo:hover {
+      background-color: #331e02;
+      transform: scale(1.05);
+    }
+
+    a.docentes {
+      background-color: #331e02; /* verde */
+    }
+    a.docentes:hover {
+      background-color: #331e02;
+      transform: scale(1.05);
+    }
+
+    /* Pie de página (opcional) */
+    footer {
+      background-color: rgba(255,255,255,0.8);
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    /* Responsive */
+    @media(max-width: 768px){
+      header h1 {
+        font-size: 2em;
+      }
+      header h2 {
+        font-size: 1.2em;
+      }
+      a.button {
+        width: 80%;
+        text-align: center;
+        font-size: 1.1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+ 
+    <h1>Colegio Nuestra Señora del Carmen Pasto</h1>
+    <h1>Programa PIAR</h1>
+       <img src="E:\0 IBERO UNIVERSIDAD\07 semestre\Dearrollo de aplicadiones web\unidad 3\Sitio Web Asistencia Colegio\images\logo cole.png" width="150" height="200" />
+  </header>
+
+  <!-- Imagen del colegio -->
+  <img src="https://d1fpam7de89b6h.cloudfront.net/wp-content/uploads/2019/07/12115058/COLEGIO-NUESTRA-SE%C3%91ORA-DEL-CARMEN-%E2%80%93-PASTO.jpg" 
+       alt="Imagen del colegio" class="main-image" />
+
+  <!-- Menú de ingreso -->
+  <nav>
+    <a href="psicologia.html" class="button psicologo">Psicólogo</a>
+    <a href="docentes.html" class="button docentes">Docentes</a>
+  </nav>
+
+  <footer>
+    &copy; 2024 Colegio Nuestra Señora del Carmen Pasto. Todos los derechos reservados.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diagnóstico del Estudiante</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #6e4c03 0%, #ACB6E5 100%);
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="date"]:focus,
+        textarea:focus {
+            border-color: #5f4007;
+            box-shadow: 0 0 8px rgba(108, 99, 255, 0.3);
+            outline: none;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        button {
+            background-color: #705705;
+            color: #fff;
+            padding: 14px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #5c4f03;
+            transform: translateY(-2px);
+        }
+
+        /* Optional: add some animation or hover effects for inputs */
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .form-container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Diagnóstico del Estudiante</h1>
+    <div class="form-container">
+        <form action="#" method="post">
+            <!-- Diagnóstico -->
+            <div class="form-group">
+                <label for="diagnostico">Diagnóstico</label>
+                <textarea id="diagnostico" name="diagnostico" placeholder="Describe el diagnóstico del estudiante..." required></textarea>
+            </div>
+            <!-- Especialista Tratante -->
+            <div class="form-group">
+                <label for="especialista">Especialista Tratante</label>
+                <input type="text" id="especialista" name="especialista" placeholder="Nombre del especialista..." required />
+            </div>
+            <!-- Fecha de actualización de documentos -->
+            <div class="form-group">
+                <label for="fecha">Fecha de actualización de documentos</label>
+                <input type="date" id="fecha" name="fecha" required />
+            </div>
+            <!-- Características que evidencian al estudiante -->
+            <div class="form-group">
+                <label for="caracteristicas">Características que evidencian al estudiante</label>
+                <textarea id="caracteristicas" name="caracteristicas" placeholder="Describir las características observadas..." required></textarea>
+            </div>
+            <!-- Recomendaciones del especialista -->
+            <div class="form-group">
+                <label for="recomendaciones">Recomendaciones del especialista</label>
+                <textarea id="recomendaciones" name="recomendaciones" placeholder="Recomendaciones..." required></textarea>
+            </div>
+            <!-- Observaciones -->
+            <div class="form-group">
+                <label for="observaciones">Observaciones</label>
+                <textarea id="observaciones" name="observaciones" placeholder="Observaciones adicionales..." required></textarea>
+            </div>
+            <!-- Botón de envío -->
+            <div class="button-container">
+                <button type="submit">Enviar Diagnóstico</button>
+                <button type="submit"><a href="index.html" >INICIO</a></button>
+                
+            </div>
+        </form>
+    </div>
+</body>
+</html>
